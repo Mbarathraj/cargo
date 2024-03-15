@@ -1,6 +1,6 @@
 // import CRUD from './CRUD';
 import './App.css';
-import Custhome from './customer/Custhome';
+import Custhome from './employee/Emphome';
 // import { LoginRegister } from './Routes/LoginRoute';
 function App() {
   return (
