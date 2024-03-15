@@ -1,11 +1,11 @@
-import CRUD from './CRUD';
+// import CRUD from './CRUD';
 import './App.css';
-import { LoginRegister } from './Routes/LoginRoute';
+import Custhome from './customer/Custhome';
+// import { LoginRegister } from './Routes/LoginRoute';
 function App() {
   return (
     <div className="App">
-      <LoginRegister />
-      { <CRUD /> }
+      <Custhome />
     </div>
   );
 }

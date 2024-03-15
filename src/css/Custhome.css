@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+.container{
+    padding: 2rem;
+}
+
+.rows{
+    border: 1px solid black;
+    height: 2rem;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subrow1{
+    height: 100%;
+    border-right: 1px solid black;
+    width: 10%;
+}
+
+.subrow2{
+    height: 100%;
+    border-left: 1px solid black;
+    width: 20%;
+    display: flex;
+    justify-content: left;
+}
+
+.sign-out{
+    width: 100%;
+    display: flex;
+}
+
+.signoutbtn{
+    width:50%;
+    height: 30px;
+    background:transparent;
+    color: black;
+    border:0;
+    border-right:1px solid black ;
+    display: flex;
+    align-items: center;
+}
