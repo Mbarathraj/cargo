@@ -8,6 +8,10 @@ span{
 p{
     color: gray;
 }
+body{
+    user-select: none;
+
+}
 button{
     background-color:transparent;
     color: black;
@@ -37,13 +41,65 @@ button:hover::after{
   list-style: none;
 }
 section{
-    height: 1200px;
+    height:auto;
 }
 .footer{
-    height: 500px;
+   height: auto;
   
 }
 .logo h3{
     color: red;
     font-family: "Anta", sans-serif;
+}
+.main{
+    position: relative;
+}
+.signIn,.signUp,.priceFinder{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    transition: 0.5s;
+    display: flex;
+    scale: 0;
+    transform: translateY(-200%);
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    height:auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(255, 255, 255);
+}
+.signIn::after,.signUp::after,.priceFinder::after{
+ content: "";
+ position: absolute;
+ width: 50%;
+ background-color:lightblue;
+ height: 50%;
+ top: -25%;
+ left: -20%;
+ z-index: -1;
+ border-radius: 50%;
+}
+.signIn::before,.signUp::before,.priceFinder::before{
+ content: "";
+ position: absolute;
+ width: 50%;
+ background-color:lightblue;
+ height: 50%;
+ bottom: -25%;
+ right: -20%;
+ z-index: -3;
+ border-radius: 50%;
+}
+.closeIcon{
+    position: absolute;
+    top: -100px;
+    cursor: pointer;
+    right: -7%;
+}
+.show{
+    scale: 1;
+    transform: translate(-50%,-50%);
 }

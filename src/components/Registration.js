@@ -52,11 +52,12 @@
 // )}
 // export default Registration
 
-
+import Login from './Login';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import axios from 'axios';
+import CloseIcon from '../assests/img/close.png';
 
 
 const RegistrationForm = () => {
@@ -91,8 +92,8 @@ const RegistrationForm = () => {
         <div className='Registration'>
             <h1>Cargo Manager System</h1>
 
-            <div className="container1">
-                <h1>Create Account</h1>
+            <div className="container1 row">
+                <h3>Create Account</h3>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="name">Name:</label>
                     <input
@@ -103,7 +104,7 @@ const RegistrationForm = () => {
                         onChange={(e) => setName(e.target.value)}
                     />
 
-                    <label htmlFor="Phone">Phone NO :</label>
+                    <label htmlFor="Phone">Phone No :</label>
                     <input
                         type="number"
                         id="Phone"
@@ -119,12 +120,14 @@ const RegistrationForm = () => {
                         value={Address}
                         onChange={(e) => setAddress(e.target.value)}
                     />
-
-                    <button  className='btn1' type="submit">Create Account</button>
+                    <div className="row d-flex justify-content-center m-2">
+                    <button  className='btn1 col-8' type="submit">Create Account</button>
+                    </div>
                 </form>
-                <p>
+                <img src={CloseIcon} alt="" style={{width:"45px"}} className='closeIcon' onClick={()=> document.querySelector('.signUp').classList.remove('show')}/>
+                {/* <p>
                     Already have an account? <span className='siginbtn' onClick={() => handleLog()}>Sign in</span>
-                </p>
+                </p> */}
             </div>
         </div>
     );
