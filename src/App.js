@@ -1,16 +1,12 @@
-// import CRUD from './CRUD';
-import './App.css';
-import Custhome from './customer/Custhome';
-import CustomerHome from './pages/CustomerHome';
-import Registration from './components/Registration';
-import CRUD from './CRUD';
-import Login from './components/Login';
+import "./App.css";
+
+import CustomerHome from "./pages/CustomerHome";
 
 function App() {
   return (
     <div className="App">
       {/* <Custhome /> */}
-      <CustomerHome/>
+      <CustomerHome />
     </div>
   );
 }
