@@ -19,11 +19,9 @@
 }*/
 
 .container1 {
-  width: 350px;
-  background-color: #fff;
+  position: relative;
   padding: 2rem;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -37,29 +35,29 @@ label {
 }
 
 .btn1{
-  width: 100%;
+  width: 50%;
   padding: 0.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  background-color: #45a049;
   border: 1px solid #ccc;
   border-radius: 4px;
+  transition: 0.5s;
 }
 input,
-button {
-  width: 100%;
+.btn1 {
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-button {
-  background-color: #4CAF50;
+.btn1 {
   color: white;
   cursor: pointer;
 }
 
-button:hover {
+.btn1:hover {
   background-color: #45a049;
 }
 
@@ -72,3 +70,4 @@ a {
   color: #828ef1;
   cursor: pointer;
 }
+
