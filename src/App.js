@@ -1,12 +1,12 @@
 // import CRUD from './CRUD';
 import './App.css';
-import Custhome from './employee/Emphome';
+import Emphome from './employee/Emphome';
 // import { LoginRegister } from './Routes/LoginRoute';
 function App() {
   return (
     <div className="App">
-      <Custhome />
-    </div>
+      <Emphome />
+      </div>
   );
 }
 
