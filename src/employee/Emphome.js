@@ -5,12 +5,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../css/Emphome.css';
 
-
-
-
-
 const Custhome = () => {
-    const [sb, setsb] = useState(false);
+    const [sbactive, setsbactive] = useState(false);
+    const handleclick = () => {
+       sbactive? setsbactive(false) : setsbactive(true);
+    }
     return (
         <Container fluid="md" className="container1">
             <Row className="rows1">
@@ -21,7 +20,7 @@ const Custhome = () => {
                     <Button className="signoutbtn">Sign-out</Button>
                 </Row>
             </Row>
-            <Button className="sbbtn" onClick={() => setsb(true)}></Button>
+            <Button className={sbactive? "sbbtn-active":"sbbtn"} onClick={handleclick()}></Button>
             <Col className="sidebar">
                 <Row className="todays-product"></Row>
                 <Row className="pending"></Row>
